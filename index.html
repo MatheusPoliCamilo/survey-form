@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>FCC: Survey Form</title>
-</head>
-<body>
-    <h1 id="title">Formulário de Pesquisa</h1>
-    <div id="panel">
 
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>FCC: Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title" class="title mt-6" style="text-align: center;">Survey Form</h1>
+  <p class="subtitle" style="text-align: center; font-style: italic;" id="description">
+    A freeCodeCamp form project using Bulma
+  </p>
+  <div class="columns">
+    <div class="column"></div>
+    <div class="column">
+      <form action="" id="survey-form" method="GET">
+        <div class="field">
+          <label for="name" class="label" id="name-label">Name</label>
+          <div class="control">
+            <input class="input" type="text" name="name" id="name" placeholder="Enter your name">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email" class="label" id="email-label">Email</label>
+          <div class="control">
+            <input class="input" type="email" name="email" id="email" placeholder="Enter your email">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="number" class="label" id="number-label">Age</label>
+          <div class="control">
+            <input class="input" type="number" name="number" id="number" placeholder="Enter your age">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="dropdown" class="label" id="dropwdown-label">Gender</label>
+          <div class="control">
+            <div class="select">
+              <select name="dropdown" id="dropdown">
+                <option value="M" selected>Male</option>
+                <option value="F">Female</option>
+                <option value="O">Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- WIP -->
+        <div class="field">
+          <label for=""></label>
+        </div>
+      </form>
     </div>
+    <div class="column"></div>
+  </div>
 </body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
