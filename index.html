@@ -19,21 +19,22 @@
         <div class="field">
           <label for="name" class="label" id="name-label">Name</label>
           <div class="control">
-            <input class="input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="input" type="text" name="name" id="name" placeholder="Enter your name" required>
           </div>
         </div>
 
         <div class="field">
           <label for="email" class="label" id="email-label">Email</label>
           <div class="control">
-            <input class="input" type="email" name="email" id="email" placeholder="Enter your email">
+            <input class="input" type="email" name="email" id="email" placeholder="Enter your email" required>
           </div>
         </div>
 
         <div class="field">
           <label for="number" class="label" id="number-label">Age</label>
           <div class="control">
-            <input class="input" type="number" name="number" id="number" placeholder="Enter your age">
+            <input class="input" type="number" name="number" id="number" placeholder="Enter your age" min="12"
+              max="100">
           </div>
         </div>
 
@@ -50,15 +51,79 @@
           </div>
         </div>
 
-        <!-- WIP -->
         <div class="field">
-          <label for=""></label>
+          <label for="dropdown" class="label" id="dropwdown-label">Favorite game type</label>
+
+          <div class="control">
+            <label class="radio">
+              <input class="radio" type="radio" name="game-type" value="aaa">
+              AAA
+            </label>
+            <label class="radio">
+              <input class="radio" type="radio" name="game-type" value="indie">
+              Indie
+            </label>
+            <label class="radio">
+              <input class="radio" type="radio" name="game-type" value="esport">
+              Esport
+            </label>
+          </div>
         </div>
+
+        <div class="field">
+          <label for="" class="label">Favorite games</label>
+
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" value="final-fantasy">
+              Final Fantasy
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" value="dead-cells">
+              Dead Cells
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" value="league-of-legends">
+              League of Legends
+            </label>
+          </div>
+
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" value="god-of-war">
+              God of War
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" value="moonlighter">
+              Moonlighter
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" value="dota-2">
+              Dota 2
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Additional favorite games</label>
+          <div class="control">
+            <textarea class="textarea" cols="30" rows="10"
+              placeholder="Enter your favorite games or franchises that weren't listed above"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" type="submit" class="button is-primary" id="submit">Submit</button>
       </form>
     </div>
+
     <div class="column"></div>
   </div>
 </body>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
